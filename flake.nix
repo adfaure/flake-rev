@@ -16,7 +16,6 @@
         packages = {
           lock = pkgs.writeShellScriptBin "lock" ''
             # Lock nixpkgs
-            echo tell me why ?
             echo ${self.rev or self.dirtyRev or "No revision available"}
           '';
         };
