@@ -1,8 +1,6 @@
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/24.05";
-    nix2containerInput.url = "github:nlewo/nix2container";
-    nix2containerInput.inputs.nixpkgs.follows = "nixpkgs";
     flakeUtils.url = "github:numtide/flake-utils";
   };
 
