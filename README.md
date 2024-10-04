@@ -13,7 +13,7 @@ lock = pkgs.writeShellScriptBin "lock" ''
 '';
 ```
 
-When overriding an input with `--override-input`, the `self` variable in the flake no longer contains any information about the flake revision (not even `self.dirtyRev`). This behavior can be observed when running commands that utilize the flake's lock file.
+When overriding an input with `--override-input`, the `self` variable in the flake no longer contains any information about the flake revision (not even `self.dirtyRev`). This behavior can be observed when running commands that utilize the above script in a `flake.nix`.
 
 Example of the behavior:
 
